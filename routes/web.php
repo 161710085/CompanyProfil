@@ -12,9 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('wel');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('bahan','BahanController');
+Route::resource('kategori','KategoriController');
+Route::resource('jenis','JenisController');
+ Route::post('produk/{publish}', 'ProdukController@Publish')->name('produk.publish');
+
+Route::resource('produk','ProdukController');
