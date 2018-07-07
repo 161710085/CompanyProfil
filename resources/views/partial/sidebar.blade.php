@@ -32,7 +32,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="kategori" class="nav-link">
+            <a href="/kategori" class="nav-link">
               <i class="nav-icon fa fa-pie-chart"></i>
               <p>
                 Kategori

@@ -19,7 +19,7 @@ class CreateProduksTable extends Migration
             $table->string('ukuran');
             $table->string('warna');
             $table->string('harga');
-                      $table->string('foto');
+            $table->string('foto');
             $table->unsignedInteger('bahan_id');
             $table->foreign('bahan_id')->references('id')->on('bahans')->ondelete('cascade');
             $table->unsignedInteger('jenis_id');
