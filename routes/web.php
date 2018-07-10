@@ -19,9 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('bahan','BahanController');
-Route::resource('kategori','KategoriController');
-Route::resource('jenis','JenisController');
- Route::post('produk/{publish}', 'ProdukController@Publish')->name('produk.publish');
+	Route::resource('produk','ProdukController');
 
-Route::resource('produk','ProdukController');
+Route::group(['prefix'=>'admin','middleware'=>['auth','role:admin']],
+function(){
+
+	Route::resource('bahan','BahanController');
+	Route::resource('kategori','KategoriController');
+	Route::resource('jenis','JenisController');
+
+
+});

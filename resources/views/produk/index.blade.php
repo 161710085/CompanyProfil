@@ -5,7 +5,10 @@
 		<div class="col-md-12">
 			<div class="panel panel-primary">
 			  <div class="panel-heading">Data produk
-			  	<div class="panel-title pull-right"><a href="{{ route('produk.create') }}">Tambah</a>
+			  	<div class="panel-title pull-right">
+@role('admin')
+			  		<a href="{{ route('produk.create') }}">Tambah</a>
+			 @endrole
 			  	</div>
 			  </div>
 			  <div class="panel-body">
@@ -44,6 +47,7 @@
 				    	
 				    	
 						<td>
+							@role('admin')
 							<a class="btn btn-warning" href="{{ route('produk.edit',$data->id) }}">Edit</a>
 						</td>
 						<td>
@@ -53,7 +57,9 @@
 
 								<button type="submit" class="btn btn-danger">Delete</button>
 							</form>
+
 						</td>
+						@endrole
 				      </tr>
 				      @endforeach	
 				  	</tbody>

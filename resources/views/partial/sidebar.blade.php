@@ -32,7 +32,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="/kategori" class="nav-link">
+            <a href="{{ route('kategori.index') }}" class="nav-link">
               <i class="nav-icon fa fa-pie-chart"></i>
               <p>
                 Kategori
@@ -44,7 +44,7 @@
             </ul>
           </li>
          <li class="nav-item">
-             <a href="bahan" class="nav-link">
+             <a href="{{ route('bahan.index') }}" class="nav-link">
                                            
               <i class="nav-icon fa fa-th"></i>
               <p>
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="jenis" class="nav-link">
+            <a href="{{ route('jenis.index') }}" class="nav-link">
               <i class="nav-icon fa fa-edit"></i>
               <p>
                 Jenis
@@ -74,7 +74,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="produk" class="nav-link">
+                <a href="{{ route('produk.index') }}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Produk</p>
                 </a>

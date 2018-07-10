@@ -70,7 +70,7 @@
                                     <option value="{{ $data->id }}">{{ $data->nama }}</option>
                                     @endforeach()
                                 </select>
-                            </div>
+                             </div>
                              <div class="form-group">
                                 <label for="cc-payment" class="control-label mb-1">Jenis</label>
                                 <select class="form-control" name="jenis_id" required>
@@ -81,6 +81,10 @@
                             </div>
 			  		<div class="form-group">
 			  			<button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="reset" class="btn btn-outline-danger"> 
+                                    <i class="fa  fa-exclamation-triangle fa-lg"></i>
+                                    Batal
+                                </button>
 			  		</div>
 			  	</form>
 			  </div>
